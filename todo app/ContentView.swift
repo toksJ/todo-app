@@ -8,14 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var todos = [
+    Todo(title: "feed the cat"),
+    Todo(title: "buy food"),
+    Todo(title: "finish unit 8 Xcode"),
+    Todo(title: "workout", isCompleted: true),
+    Todo(title: "pray"),
+ 
+    ]
+    
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        List(todos ) { todo in
+                /*@START_MENU_TOKEN@*/Text(todo.title)/*@END_MENU_TOKEN@*/
         }
-        .padding()
     }
 }
 
