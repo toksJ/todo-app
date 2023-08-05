@@ -20,8 +20,12 @@ struct ContentView: View {
     
     
     var body: some View {
-        List(todos ) { todo in
+        
+        NavigationStack {
+            List(todos ) { todo in
                 /*@START_MENU_TOKEN@*/Text(todo.title)/*@END_MENU_TOKEN@*/
+            }
+            .navigationTitle("Todos")
         }
     }
 }
