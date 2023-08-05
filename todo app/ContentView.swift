@@ -22,8 +22,15 @@ struct ContentView: View {
     var body: some View {
         
         NavigationStack {
-            List(todos ) { todo in
-                /*@START_MENU_TOKEN@*/Text(todo.title)/*@END_MENU_TOKEN@*/
+            List($todos) { $todo in
+                   HStack {
+                       Image(systemName: todo.isCompleted ? "checkmark.circle.fill" : "circle")
+                           .onTapGesture {
+                               todo.isCompleted.toggle()
+                           }
+                    Text(todo.title)
+                           .strikethrough(todo.isCompleted)
+                }
             }
             .navigationTitle("Todos")
         }
