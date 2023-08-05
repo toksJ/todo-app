@@ -12,6 +12,8 @@ struct Todo: Identifiable {
     
    var id = UUID()
     var title: String
+    var subtitle = ""
+//    so sub is empyu user can chnage
     var isCompleted = false
     
 }

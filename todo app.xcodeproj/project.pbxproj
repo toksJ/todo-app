@@ -12,6 +12,7 @@
 		EC87D4172A7D64DB00207232 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC87D4162A7D64DB00207232 /* Assets.xcassets */; };
 		EC87D41A2A7D64DB00207232 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC87D4192A7D64DB00207232 /* Preview Assets.xcassets */; };
 		EC87D4212A7D656600207232 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC87D4202A7D656500207232 /* Todo.swift */; };
+		EC87D4232A7E43E700207232 /* todo detailed view.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC87D4222A7E43E700207232 /* todo detailed view.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		EC87D4162A7D64DB00207232 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC87D4192A7D64DB00207232 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EC87D4202A7D656500207232 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		EC87D4222A7E43E700207232 /* todo detailed view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "todo detailed view.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +39,7 @@
 		EC87D4062A7D64D800207232 = {
 			isa = PBXGroup;
 			children = (
+				EC87D4222A7E43E700207232 /* todo detailed view.swift */,
 				EC87D4112A7D64D800207232 /* todo app */,
 				EC87D4102A7D64D800207232 /* Products */,
 			);
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC87D4232A7E43E700207232 /* todo detailed view.swift in Sources */,
 				EC87D4152A7D64D800207232 /* ContentView.swift in Sources */,
 				EC87D4212A7D656600207232 /* Todo.swift in Sources */,
 				EC87D4132A7D64D800207232 /* todo_appApp.swift in Sources */,
