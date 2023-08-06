@@ -70,7 +70,8 @@ struct ContentView: View {
                 }
             }
             .sheet(isPresented: $showSheet) {
-                newTodoView()
+                newTodoView(sourceArray: $todos )
+                    .presentationDetents([.medium])
             }
             
                 }
