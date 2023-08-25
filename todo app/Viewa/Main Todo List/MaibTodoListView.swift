@@ -23,7 +23,7 @@ struct MaibTodoListView: View {
             List($todoManager.todos , editActions: [.all]) { $todo in
                 ToDoRowView(todo: $todo)
             }
-            .navigationTitle("Todos")
+            .navigationTitle("Friends")
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
                     

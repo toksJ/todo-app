@@ -12,21 +12,21 @@ struct ContentView: View {
     @StateObject var todoManager = TodoManager()
 
     
-    //    @State  private var todos = [
-    //
-    //        Todo(title: "feed the cat"),
-    //        Todo(title: "buy food", subtitle: "banana, eggs, ice cream"),
-    //        Todo(title: "finish unit 8 Xcode", subtitle: "finish by sunday"),
-    //        Todo(title: "workout", isCompleted: true),
-    //        Todo(title: "pray")
-    //    ]
+//        @State  private var todos = [
+//
+//            Todo(title: "feed the cat"),
+//            Todo(title: "buy food", subtitle: "banana, eggs, ice cream"),
+//            Todo(title: "finish unit 8 Xcode", subtitle: "finish by sunday"),
+//            Todo(title: "workout", isCompleted: true),
+//            Todo(title: "pray")
+//        ]
    
     
     var body: some View {
         TabView {
             MaibTodoListView(todoManager: todoManager)
                 .tabItem {
-                    Label("Todos", systemImage: "checkmark.cirlce.fill")
+                    Label("Friends", systemImage: "checkmark.cirlce.fill")
           }
             HowManyMoreView(todoManager: todoManager)
                 .tabItem{

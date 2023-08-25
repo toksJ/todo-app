@@ -10,22 +10,28 @@ import SwiftUI
 struct TodoDetailView: View {
     
     @Binding var todos: Todo
-    
+    @State private var iconSize = 0.0
+
     var body: some View {
         Form {
             TextField("Title", text: $todos.title)
             TextField("Subtitle", text: $todos.subtitle)
-            Toggle("is completed", isOn: $todos.isCompleted)
+            Toggle("are they still loved ", isOn: $todos.isCompleted)
+            Toggle("are they still in IOs with me  ", isOn: $todos.isCompleted)
+            Text("how much i lovem this persn is  ^[\(Int(iconSize)) much ](inflect: true)")
+            Slider(value: $iconSize, in: 0...10)
+            
+
 
         }
-        .navigationTitle("Todo Details")
+        .navigationTitle("Frieds Ranking 👩‍🦯")
     }
 }
 
 struct TodoDetailView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationStack {
-            TodoDetailView(todos: .constant(Todo(title: "feed the cat")))
+            TodoDetailView(todos: .constant(Todo(title: "The homie ")))
         }
     }
 }

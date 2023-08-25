@@ -11,11 +11,10 @@ extension Todo {
     
     static let sampleTodos = [
         
-        Todo (title: "ios"),
-        Todo (title: "senior year", subtitle: "Math, Physics, Computer, Chemestry"),
-        Todo (title: "Finish project"), Todo (title: "Call mom", isCompleted: true),
-        Todo (title: "Go for a run", subtitle: "1km"),
-        Todo (title: "Read a book")
+        Todo (title: "🖇️📚☕️ Dandan", subtitle: "AKA Dana "),
+        Todo (title: "🌈🌸🧋 Sarsora", subtitle: "AKA sara "),
+        Todo (title: "✨🧚🏻‍♀️ Roz", subtitle: "AKA Razan ")
+      
     
     
     ]
